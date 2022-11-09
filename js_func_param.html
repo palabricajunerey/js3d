@@ -73,9 +73,8 @@
         let fruits = ["mango", "banana", "apple", "rambutan", "grapes", "tomato", "guava"];
         let a;
         for (a = 0; a < fruits.length; a++) {
-            if (a == 1 || a == 3 || a == 5) {
-
-                document.write(fruits.length + "<BR>")
+            if (a == 1) {
+                continue;
             }
             document.write(fruits[a] + " " + "<br>");
         }
@@ -90,14 +89,31 @@
             i--;
         }
 
-        let num = parseInt(prompt("Enter the number", "Enter . . ."));
-        let count = 0;
-        while(num > 0){
-            num = Math.trunc(num / 10); //1 / 10 = 0.1
-            count++;
+        // let num = parseInt(prompt("Enter the number", "Enter . . ."));
+        // let count = 0;
+        // while(num > 0){
+        //     num = Math.trunc(num / 10); //1 / 10 = 0.1
+        //     count++;
+        // }
+        // alert("Digits: " + count);
+        // document.write("</div>");
+
+        //switch-case statement
+        let text = prompt("Enter a character", "Enter . . .");
+        switch(text.toLowerCase()){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                //execution
+                alert(text + " is a vowel");
+                break;
+            default:
+                //execution
+                alert(text + " is a special character or a consonant");
+                break;
         }
-        alert("Digits: " + count);
-        document.write("</div>");
     </script>
 </body>
 
