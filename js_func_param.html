@@ -69,25 +69,25 @@
         */
         
         document.write("<div class='container'>");
-        document.write("<h1>Using for-loop</h1>");
-        let fruits = ["mango", "banana", "apple", "rambutan", "grapes", "tomato", "guava"];
-        let a;
-        for (a = 0; a < fruits.length; a++) {
-            if (a == 1) {
-                continue;
-            }
-            document.write(fruits[a] + " " + "<br>");
-        }
+        // document.write("<h1>Using for-loop</h1>");
+        // let fruits = ["mango", "banana", "apple", "rambutan", "grapes", "tomato", "guava"];
+        // let a;
+        // for (a = 0; a < fruits.length; a++) {
+        //     if (a == 1) {
+        //         continue;
+        //     }
+        //     document.write(fruits[a] + " " + "<br>");
+        // }
 
 
-        document.write("<h1 class='mt-3'>Using while-loop</h1>");
-        //while-loop
+        // document.write("<h1 class='mt-3'>Using while-loop</h1>");
+        // //while-loop
         
-        let i = fruits.length - 1; //7
-        while(i >= 0){
-            document.write(fruits[i] + "<br>");
-            i--;
-        }
+        // let i = fruits.length - 1; //7
+        // while(i >= 0){
+        //     document.write(fruits[i] + "<br>");
+        //     i--;
+        // }
 
         // let num = parseInt(prompt("Enter the number", "Enter . . ."));
         // let count = 0;
@@ -99,20 +99,41 @@
         // document.write("</div>");
 
         //switch-case statement
-        let text = prompt("Enter a character", "Enter . . .");
-        switch(text.toLowerCase()){
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                //execution
-                alert(text + " is a vowel");
-                break;
-            default:
-                //execution
-                alert(text + " is a special character or a consonant");
-                break;
+        // let text = prompt("Enter a character", "Enter . . .");
+        // switch(text.toLowerCase()){
+        //     case 'a':
+        //     case 'e':
+        //     case 'i':
+        //     case 'o':
+        //     case 'u':
+        //         //execution
+        //         alert(text + " is a vowel");
+        //         break;
+        //     default:
+        //         //execution
+        //         alert(text + " is a special character or a consonant");
+        //         break;
+        // }
+
+        // let person = { //name:value
+        //     name: "Juan",
+        //     hairColor: "red",
+        //     weight: 55,
+        //     height: 152,
+        //     age: 21,
+        //     address: "Camingawan"
+        // }
+
+        document.write("<hr>");
+        // document.write("My name is " + person.name + " and I am " + person.age + " years old.");
+
+        var a = 100;
+        try{
+            alert("value of a variable is: " + a);
+        }catch(error){
+            alert("May sala gid");
+        }finally{
+            alert("This is for finally block!");
         }
     </script>
 </body>
